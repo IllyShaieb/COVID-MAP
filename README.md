@@ -14,15 +14,15 @@ The script can be run for any country on the website, and for any number of days
 
 ## Prerequisites
 
-* Uses the latest version of python
-* Have a Gmail account and add your Gmail details to your environment variables (see [this](https://www.youtube.com/watch?v=IolxqkL7cD8) excellent video tutorial for how to do this)
+  * Uses the latest version of python
+  * Have a Gmail account and add your Gmail details to your environment variables (see [this](https://www.youtube.com/watch?v=IolxqkL7cD8) excellent video tutorial for how to do this)
 
 ## Installation
 
-1. Clone this repository
-2. Navigate to the cloned location
-3. Run: `python setup.py install`
-4. Run: `python comap.py`
+ 1. Clone this repository
+ 2. Navigate to the cloned location
+ 3. Run: `python setup.py install`
+ 4. Run: `python run_comap.py`
 
 ## Usage
 
@@ -40,20 +40,20 @@ Feel free to submit issues and enhancement requests.
 
 To contribute to COMAP, follow these steps:
 
-Fork this repository.
-1. Create a branch: `git checkout -b development/<change_type>`.
-2. Make your changes and commit them: `git commit -m '<commit_message>'`
-3. Push to the development branch: `git push origin COMAP/development`
-4. Create the pull request.
+ 1. Fork this repository.
+ 2. Create a branch: `git checkout -b development/<change_type>`.
+ 3. Make your changes and commit them: `git commit -m '<commit_message>'`
+ 4. Push to the development branch: `git push origin COMAP/development`
+ 5. Create the pull request.
 
 ## Ideas
 
 Here are some ideas I have for the future of this project:
 
-* Add ability to gather all rows in the table
-* Add time to the csv data
-* Mulithreading to speed up sending email and saving to csv
-* Add a GUI for creating graphs and other visual data
-* Add tests
+  * Add ability to gather all rows in the table
+  * Add time to the csv data
+  * Mulithreading to speed up sending email and saving to csv
+  * Add a GUI for creating graphs and other visual data
+  * Add tests
 
 Feel free to suggest more. See the Contributing section if you would like to implement my ideas or your own.

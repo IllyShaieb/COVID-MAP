@@ -1,4 +1,4 @@
-""" comap.py - This script sends an email of the latest COMAP data for your chosen country and saves the data to a csv. """
+""" comap.py - This script sends an email of the latest COVID19 data for your chosen country and saves the data to a csv. """
 
 # BUILT-IN MODULES
 import csv
