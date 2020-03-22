@@ -22,7 +22,7 @@ The script can be run for any country on the website, and for any number of days
 1. Clone this repository
 2. Navigate to the cloned location
 3. Run: `python setup.py install`
-4. Run: `python comap.py`
+4. Run: `python run_comap.py`
 
 ## Usage
 
