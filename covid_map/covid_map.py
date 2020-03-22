@@ -177,7 +177,7 @@ class Coronovirus():
         if not os.path.exists("data"):
              os.makedirs("data")
 
-        filename = f"data/comap.csv"
+        filename = f"data/covid_map.csv"
 
         if os.path.exists(filename):
             with open(filename, mode='a', newline='') as csv_file:

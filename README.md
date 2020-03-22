@@ -1,8 +1,8 @@
-# COMAP (COVID19 TRACKER)
+# COVID-MAP (COVID19 TRACKER)
 
 ## Introduction
 
-Welcome to COMAP, the COVID19 Tracker.
+Welcome to COVID-MAP, the COVID19 Tracker.
 
 This script sends an email of the latest COVID19 data for your chosen country and saves the data to a csv.
 
@@ -22,11 +22,11 @@ The script can be run for any country on the website, and for any number of days
  1. Clone this repository
  2. Navigate to the cloned location
  3. Run: `python setup.py install`
- 4. Run: `python run_comap.py`
+ 4. Run: `python run_covid_map.py`
 
 ## Usage
 
-When running `comap.py`, it first asks the user if they want to start in debugging mode. If the answer is "Y" then debugging is set to True and it will print the data found to the console and not send an email or save the data.
+When running `covid_map.py`, it first asks the user if they want to start in debugging mode. If the answer is "Y" then debugging is set to True and it will print the data found to the console and not send an email or save the data.
 
 The script then asks the user for the country from which the data is to be gathered (see the Worldometers website linked above for the full list).
  
@@ -38,12 +38,12 @@ Feel free to submit issues and enhancement requests.
 
 ## Contributing
 
-To contribute to COMAP, follow these steps:
+To contribute to COVID-MAP, follow these steps:
 
  1. Fork this repository.
  2. Create a branch: `git checkout -b development/<change_type>`.
  3. Make your changes and commit them: `git commit -m '<commit_message>'`
- 4. Push to the development branch: `git push origin COMAP/development`
+ 4. Push to the development branch: `git push origin COVID-MAP/master`
  5. Create the pull request.
 
 ## Ideas
