@@ -3,4 +3,4 @@
 from covid_map import covid_map
 
 if __name__ == "__main__":
-    comap.main()
+    covid_map.main()
