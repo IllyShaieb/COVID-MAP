@@ -1,4 +1,4 @@
-""" comap.py - This script sends an email of the latest COVID19 data for your chosen country and saves the data to a csv. """
+"""comap.py - This script sends an email of the latest COVID19 data for your chosen country and saves the data to a csv."""
 
 # BUILT-IN MODULES
 import csv
@@ -7,7 +7,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import os
 import smtplib
-import time
 
 # INSTALLED MODULES
 from bs4 import BeautifulSoup
@@ -15,7 +14,7 @@ import requests
 
 
 class Coronovirus():
-    """ Class for getting coronavirus data for a country and sending the data as a message 
+    """Class for getting coronavirus data for a country and sending the data as a message 
 
     ...
 
@@ -49,7 +48,7 @@ class Coronovirus():
     """
 
     def __init__(self, debugging=False, country="UK"):
-        """ If debugging is set to True then it will print the data found to the console (Default = False). Country default is UK. """
+        """If debugging is set to True then it will print the data found to the console (Default = False). Country default is UK. """
 
         self.debugging = debugging
         self.country = country
@@ -62,7 +61,7 @@ class Coronovirus():
         self.message = ""
 
     def get_time_now(self):
-        """ Gets the current time and formats in HH:MM:SS """
+        """Gets the current time and formats in HH:MM:SS """
 
         now = datetime.now()
 
@@ -71,7 +70,7 @@ class Coronovirus():
         return time_now
 
     def get_data(self):
-        """ Scrapes the data from a page. """
+        """Scrapes the data from a page."""
 
         print(f"{self.get_time_now()} | Finding table...")
         table = []
@@ -142,7 +141,7 @@ class Coronovirus():
             self.send_email(subject, message)
 
     def format_value(self, text):
-        """ If the values is empty then set the value to 0 else return original text. """
+        """If the values is empty then set the value to 0 else return original text."""
 
         if text == " ":
             return '0'
@@ -150,7 +149,7 @@ class Coronovirus():
             return text
 
     def send_email(self, subject, message):
-        """ Sends an email using the subject and message specified. """
+        """Sends an email using the subject and message specified."""
 
         email = os.environ.get('GMAIL_ADDRESS')
         password = os.environ.get('GMAIL_PASSWORD')
@@ -172,7 +171,7 @@ class Coronovirus():
         print(f"{self.get_time_now()} | Email sent to: {email}")
 
     def write_to_csv(self, headers, data):
-        """ Gets the data specified and saves to csv. """
+        """Gets the data specified and saves to csv."""
 
         if not os.path.exists("data"):
              os.makedirs("data")
@@ -193,7 +192,7 @@ class Coronovirus():
 
 
 def main():
-    """ Starts the COVID19 tracker. First asks the user if they want to start in debugging mode. Then asks the user for the country (default is UK). Then asks the user to choose whether to run in debug mode (which only prints the results but does not send an email or save the results). Also asks for number of days to run. """
+    """Starts the COVID19 tracker. First asks the user if they want to start in debugging mode. Then asks the user for the country (default is UK). Then asks the user to choose whether to run in debug mode (which only prints the results but does not send an email or save the results). Also asks for number of days to run."""
 
     try:
 
