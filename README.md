@@ -1,6 +1,6 @@
 # COVID-MAP (COVID19 TRACKER)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2bb0ce2b4bc64584b102d0b4c54d9941)](https://www.codacy.com/manual/EquallyWolf/COVID-MAP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=EquallyWolf/COVID-MAP&amp;utm_campaign=Badge_Grade) [![Python Badge](https://img.shields.io/badge/python-3.8-blue)]("") [![Stars Badge](https://img.shields.io/github/stars/EquallyWolf/COVID-MAP)]("") ![GitHub issues](https://img.shields.io/github/issues/EquallyWolf/COVID-MAP) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/EquallyWolf/COVID-MAP) ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fequallywolf.github.io%2FCOVID-MAP%2F)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e66e89b5bea45a7a2bafc21c187d616)](https://www.codacy.com/manual/EquallyWolf/COVID-MAP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=EquallyWolf/COVID-MAP&amp;utm_campaign=Badge_Grade) [![Python Badge](https://img.shields.io/badge/python-3.8-blue)]("") [![Stars Badge](https://img.shields.io/github/stars/EquallyWolf/COVID-MAP)]("") ![GitHub issues](https://img.shields.io/github/issues/EquallyWolf/COVID-MAP) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/EquallyWolf/COVID-MAP) ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fequallywolf.github.io%2FCOVID-MAP%2F)
 
 ## Introduction
 
