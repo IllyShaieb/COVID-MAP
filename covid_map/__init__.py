@@ -1,1 +1,1 @@
-"""__init__.py for covid_map.py"""
+"""__init__.py for covid_map module."""

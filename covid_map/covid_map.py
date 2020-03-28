@@ -14,7 +14,7 @@ import requests
 
 
 class Coronovirus():
-    """Class for getting coronavirus data for a country and sending the data as a message 
+    """Class for getting coronavirus data for a country and sending the data as a message.
 
     ...
 
@@ -30,11 +30,10 @@ class Coronovirus():
 
     data (dictionary) : The dictionary containing the gathered table data.
 
-    message (string) : The output message formatted with the gathered data. 
+    message (string) : The output message formatted with the gathered data.
 
     Methods
     -------
-
     get_time_now() : Gets the current time and formats in HH:MM:SS
 
     get_data() : Scrapes the data from a page.
@@ -48,8 +47,7 @@ class Coronovirus():
     """
 
     def __init__(self, debugging=False, country="UK"):
-        """If debugging is set to True then it will print the data found to the console (Default = False). Country default is UK. """
-
+        """If debugging is set to True then it will print the data found to the console (Default = False). Country default is UK."""
         self.debugging = debugging
         self.country = country
 
@@ -61,8 +59,7 @@ class Coronovirus():
         self.message = ""
 
     def get_time_now(self):
-        """Gets the current time and formats in HH:MM:SS """
-
+        """Gets the current time and formats in HH:MM:SS."""
         now = datetime.now()
 
         time_now = datetime.strftime(now, "%H:%M:%S")
@@ -71,7 +68,6 @@ class Coronovirus():
 
     def get_data(self):
         """Scrapes the data from a page."""
-
         print(f"{self.get_time_now()} | Finding table...")
         table = []
         table = self.soup.find("table")
@@ -142,7 +138,6 @@ class Coronovirus():
 
     def format_value(self, text):
         """If the values is empty then set the value to 0 else return original text."""
-
         if text == " ":
             return '0'
         else:
@@ -150,7 +145,6 @@ class Coronovirus():
 
     def send_email(self, subject, message):
         """Sends an email using the subject and message specified."""
-
         email = os.environ.get('GMAIL_ADDRESS')
         password = os.environ.get('GMAIL_PASSWORD')
 
@@ -172,7 +166,6 @@ class Coronovirus():
 
     def write_to_csv(self, headers, data):
         """Gets the data specified and saves to csv."""
-
         if not os.path.exists("data"):
              os.makedirs("data")
 
@@ -193,7 +186,6 @@ class Coronovirus():
 
 def main():
     """Starts the COVID19 tracker. First asks the user if they want to start in debugging mode. Then asks the user for the country (default is UK). Then asks the user to choose whether to run in debug mode (which only prints the results but does not send an email or save the results). Also asks for number of days to run."""
-
     try:
 
         print("--------------------------\nStart of COVID19 tracking.\n--------------------------")
